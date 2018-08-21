@@ -8,7 +8,7 @@ using namespace std;
 //NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 
 //头铁方法
-class Solution1{
+class Solution{
 public:
 	int minNumberInRotateArray(vector<int> rotateArray){
 		if (rotateArray.size() == 0){
