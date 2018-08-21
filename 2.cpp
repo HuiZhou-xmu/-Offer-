@@ -25,25 +25,6 @@ public:
 	}
 };
 
-class Solution1{
-public:
-	void replaceSpace(char *str, int length) {
-		for (int i = 0; i < length; i++){
-			if (*(str + i) == ' '){
-				length += 2;
-				int j = length - 1;
-				while (j - 2 > i){
-					*(str + j) = *(str + j - 2);
-					j--;
-				}
-				*(str + i) = '%';
-				*(str + i + 1) = '2';
-				*(str + i + 2) = '0';
-			}
-		}
-	}
-};
-
 int main(int argc, char **argv){
 	char *str = "We Are Happy";
 	int length = 12;
@@ -54,14 +35,4 @@ int main(int argc, char **argv){
 		str++;
 	}
 	cout << endl;
-	
 }
-
-
-//py
-//# -*- coding:utf-8 -*-
-//class Solution :
-//	# s Ô´×Ö·û´®
-//	def replaceSpace(self, s) :
-//	return s.replace(" ", "%20")
-//	# write code here

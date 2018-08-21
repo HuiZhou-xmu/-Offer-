@@ -10,6 +10,7 @@ struct ListNode{
 	ListNode(int x) :val(x), next(NULL){}
 };
 
+//借用vector先保存值，再翻转
 class Solution{
 public:
 	vector<int> printListFromTailToHead(ListNode* head){
@@ -26,5 +27,18 @@ public:
 			++beg;
 		}
 		return vec_reverse;
+	}
+};
+
+//递归
+class Solution {
+public:
+	vector<int> res;
+	vector<int> printListFromTailToHead(ListNode* head) {
+		if (head != NULL) {
+			printListFromTailToHead(head->next);
+			res.push_back(head->val);
+		}
+		return res;
 	}
 };
