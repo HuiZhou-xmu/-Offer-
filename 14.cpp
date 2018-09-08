@@ -1,7 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
 
 //输入一个链表，输出该链表中倒数第k个结点。
 
@@ -64,8 +62,6 @@ public:
 		return last;
 	}
 };
-
-
 
 int main(int argc, char **argv){
 	ListNode* l1 = new ListNode(1);

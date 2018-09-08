@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 //输入一个整数数组，实现一个函数来调整该数组中数字的顺序，
@@ -8,7 +7,7 @@ using namespace std;
 //并保证奇数和奇数，偶数和偶数之间的相对位置不变。
 
 //借用vector辅助空间，时间复杂度为O(n),空间复杂度为O(n)。
-class Solution1{
+class Solution{
 public:
 	void reOrderArray(vector<int> &array){
 		int odd_count = 0;
